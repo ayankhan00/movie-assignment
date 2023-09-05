@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Movie Assignment Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This README provides essential information for setting up and using the Movie Assignment project developed using React.js. This project allows users to view a list of movies, including details like the title, release date, and artists. Additionally, it includes features for group by, sorting and searching movies within the list.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Before you get started, make sure you have the following prerequisites installed on your machine:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Node.js](https://nodejs.org/) - Ensure you have Node.js installed to run the project and its dependencies.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Follow these steps to install and set up the Movie Assignment project:
 
-### `npm run build`
+1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/ayankhan00/movie-assignment.git
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the project directory:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   cd movie-assignment
+   ```
 
-### `npm run eject`
+3. Install the project dependencies using npm or yarn:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
+Once you have completed the installation, you can start using the Movie Assignment project. Here are some basic commands to help you get started:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Start the development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+This command will start the React development server, and you can access the project in your web browser at `http://localhost:3000`.
 
-## Learn More
+- Build the production-ready version:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
+This command will create a production-ready build of the project in the `build `directory.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Features
+### View Movie Details
+- You can view a list of movies, including details such as the movie group, release date, and artists.
+### Sorting Movies
+- You have the ability to sort the list of movies by various criteria, such as release date or movie group.
+### Searching for Movies
+- You can search for specific movies by entering keywords or phrases in the search bar. The system will filter and display matching results in real-time.
+### Additional Features
+- Feel free to add any extra features or improvements to enhance the Movie Assignment project as needed. Suggestions might include user authentication, favoriting movies, or adding reviews.
+## Contributing
+We welcome contributions from the community! If you'd like to contribute to this project, please follow these steps:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the repository on GitHub.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and test thoroughly.
+4. Create a pull request with a detailed description of your changes.
+## License
+This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License
