@@ -1,0 +1,31 @@
+/* src/components/MovieList.css */
+
+.movie-list {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.movie-list h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.movie-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.movie-list li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.movie-list strong {
+    font-weight: bold;
+}
