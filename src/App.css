@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  /* padding-bottom: 2rem; */
+  padding: 3rem;
+  /* background-color: #282c34; */
+  background-image: url('../public/background.jpg');
 }
 
 .App-logo {

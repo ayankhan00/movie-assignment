@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Movie.css'
 import Pagination from '../../components/pagination/Pagination';
+import Table from 'react-bootstrap/Table';
 
 function Movie() {
     const [movies, setMovies] = useState([]);
@@ -48,13 +49,18 @@ function Movie() {
     };
     return (
         <div className="movie-list" >
-            <h2>Movies Page</h2>
-            <input
-                type='text'
-                placeholder='Search...'
-                value={input}
-                onChange={handleChange}
-            />
+            <div className="search-bar-container">
+                <div className="search-bar">
+                    <input
+                        type="text"
+                        placeholder="Search movies..."
+                        className="search-input"
+                        value={input}
+                        onChange={handleChange}
+                    />
+                    <button className="search-button">Search</button>
+                </div>
+            </div>
             <div className="dropdown">
                 <label htmlFor="sort">Sort by: </label>
                 <select
@@ -66,7 +72,7 @@ function Movie() {
                     <option value="artists">Artists</option>
                 </select>
             </div>
-            <ul style={{ margin: '0rem 20rem' }}>
+            {/* <ul style={{ margin: '0rem 20rem' }}>
                 {currentMovies.map((movie, index) => (
                     <li key={index}>
                         <strong>Title:</strong> {movie.title}
@@ -76,7 +82,26 @@ function Movie() {
                         <strong>Actors:</strong> {movie.actors.join(', ')}
                     </li>
                 ))}
-            </ul>
+            </ul> */}
+
+            <table className="movie-table">
+                <thead>
+                    <tr>
+                        <th style={{ width: "50%" }}>Title</th>
+                        <th style={{ width: "15%" }}>Release Date</th>
+                        <th style={{ width: "35%" }}>Artists</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {currentMovies.map((movie, index) => (
+                        <tr key={index}>
+                            <td>{movie.title}</td>
+                            <td>{movie.release_date}</td>
+                            <td>{movie.actors.join(', ')}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
 
             <Pagination
                 currentPage={currentPage}
