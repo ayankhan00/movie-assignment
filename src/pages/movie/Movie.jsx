@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Movie.css'
 import Pagination from '../../components/pagination/Pagination';
-import Table from 'react-bootstrap/Table';
 
 function Movie() {
     const [movies, setMovies] = useState([]);
@@ -38,12 +37,10 @@ function Movie() {
         return 0;
     });
 
-
     const indexOfLastMovie = currentPage * itemsPerPage;
     const indexOfFirstMovie = indexOfLastMovie - itemsPerPage;
     const currentMovies = sortedMovies.slice(indexOfFirstMovie, indexOfLastMovie);
 
-    // Function to handle page changes
     const handlePageChange = (newPage) => {
         setCurrentPage(newPage);
     };
@@ -72,17 +69,6 @@ function Movie() {
                     <option value="artists">Artists</option>
                 </select>
             </div>
-            {/* <ul style={{ margin: '0rem 20rem' }}>
-                {currentMovies.map((movie, index) => (
-                    <li key={index}>
-                        <strong>Title:</strong> {movie.title}
-                        <br />
-                        <strong>Release Date:</strong> {movie.release_date}
-                        <br />
-                        <strong>Actors:</strong> {movie.actors.join(', ')}
-                    </li>
-                ))}
-            </ul> */}
 
             <table className="movie-table">
                 <thead>
