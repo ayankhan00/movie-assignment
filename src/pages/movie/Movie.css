@@ -13,7 +13,21 @@
     font-size: 24px;
     margin: 0;
 }
+.dropdown {
+    margin: 2rem 0rem;
+}
 
+.dropdown label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.dropdown select {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
 .movie-list ul {
     list-style: none;
     padding: 0;

@@ -1,22 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import './style.css'
-// import '../../public/data.json'
+import './Movie.css'
+import Pagination from '../../components/pagination/Pagination';
 
-// const movieListStyles = {
-//     padding: '20px',
-//     border: '1px solid #ccc',
-//     borderRadius: '5px',
-//     boxShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
-//     backgroundColor: '#fff',
-// };
-
-function MovieList() {
+function Movie() {
     const [movies, setMovies] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
     const [input, setInput] = useState([]);
     const [sortBy, setSortBy] = useState('releaseDate');
     const [currentPage, setCurrentPage] = useState(1);
-    const [itemsPerPage] = useState(5); // Number of i
+    const [itemsPerPage] = useState(5);
 
     useEffect(() => {
         fetch('/data.json')
@@ -34,6 +26,7 @@ function MovieList() {
         });
         console.log(input);
         setFilteredData(s);
+        setCurrentPage(1)
     };
     const sortedMovies = [...filteredData].sort((a, b) => {
         if (sortBy === 'releaseDate') {
@@ -54,7 +47,7 @@ function MovieList() {
         setCurrentPage(newPage);
     };
     return (
-        <div className="movie-list">
+        <div className="movie-list" >
             <h2>Movies Page</h2>
             <input
                 type='text'
@@ -62,7 +55,6 @@ function MovieList() {
                 value={input}
                 onChange={handleChange}
             />
-            {console.log(filteredData)}
             <div className="dropdown">
                 <label htmlFor="sort">Sort by: </label>
                 <select
@@ -74,7 +66,7 @@ function MovieList() {
                     <option value="artists">Artists</option>
                 </select>
             </div>
-            <ul>
+            <ul style={{ margin: '0rem 20rem' }}>
                 {currentMovies.map((movie, index) => (
                     <li key={index}>
                         <strong>Title:</strong> {movie.title}
@@ -85,23 +77,20 @@ function MovieList() {
                     </li>
                 ))}
             </ul>
-            <div className="pagination">
-                <button
-                    onClick={() => handlePageChange(currentPage - 1)}
-                    disabled={currentPage === 1}
-                >
-                    Previous Page
-                </button>
-                <span>Page {currentPage}</span>
-                <button
-                    onClick={() => handlePageChange(currentPage + 1)}
-                    disabled={indexOfLastMovie >= sortedMovies.length}
-                >
-                    Next Page
-                </button>
-            </div>
+
+            <Pagination
+                currentPage={currentPage}
+                totalPages={Math.ceil(sortedMovies.length / itemsPerPage)}
+                onPageChange={handlePageChange}
+            />
         </div>
     )
 }
 
-export default MovieList
+export default Movie
+
+
+
+
+
+
