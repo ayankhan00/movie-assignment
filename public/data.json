@@ -1,0 +1,292 @@
+{
+  "movies": [
+    {
+      "title": "The Avengers",
+      "release_date": "2023-01-15",
+      "actors": [
+        "Robert Downey Jr.",
+        "Chris Evans"
+      ]
+    },
+    {
+      "title": "Justice League",
+      "release_date": "2023-01-15",
+      "actors": [
+        "Ben Affleck",
+        "Gal Gadot"
+      ]
+    },
+    {
+      "title": "Black Panther",
+      "release_date": "2023-02-20",
+      "actors": [
+        "Chadwick Boseman",
+        "Michael B. Jordan"
+      ]
+    },
+    {
+      "title": "Thor: Ragnarok",
+      "release_date": "2023-02-20",
+      "actors": [
+        "Zoe Saldana",
+        "Tom Hiddleston"
+      ]
+    },
+    {
+      "title": "Spider-Man: Homecoming",
+      "release_date": "2023-03-10",
+      "actors": [
+        "Tom Holland",
+        "Zendaya"
+      ]
+    },
+    {
+      "title": "Wonder Woman 1984",
+      "release_date": "2023-03-10",
+      "actors": [
+        "Gal Gadot",
+        "Linda Hamilton"
+      ]
+    },
+    {
+      "title": "Inception",
+      "release_date": "2023-04-05",
+      "actors": [
+        "Leonardo DiCaprio",
+        "Tom Hardy"
+      ]
+    },
+    {
+      "title": "The Dark Knight Rises",
+      "release_date": "2023-04-05",
+      "actors": [
+        "Tom Hardy",
+        "Anne Hathaway"
+      ]
+    },
+    {
+      "title": "Avatar",
+      "release_date": "2023-05-20",
+      "actors": [
+        "Sam Worthington",
+        "Zoe Saldana"
+      ]
+    },
+    {
+      "title": "Guardians of the Galaxy",
+      "release_date": "2023-05-20",
+      "actors": [
+        "Tom Hardy",
+        "Zoe Saldana"
+      ]
+    },
+    {
+      "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+      "release_date": "2023-06-15",
+      "actors": [
+        "Johnny Depp",
+        "Orlando Bloom"
+      ]
+    },
+    {
+      "title": "Interstellar",
+      "release_date": "2023-06-15",
+      "actors": [
+        "Linda Hamilton",
+        "Anne Hathaway"
+      ]
+    },
+    {
+      "title": "Eternal Sunshine of the Spotless Mind",
+      "release_date": "2023-07-10",
+      "actors": [
+        "Jim Carrey",
+        "Zoe Saldana"
+      ]
+    },
+    {
+      "title": "The Notebook",
+      "release_date": "2023-07-10",
+      "actors": [
+        "Gal Gadot",
+        "Rachel McAdams"
+      ]
+    },
+    {
+      "title": "The Shawshank Redemption",
+      "release_date": "2023-08-25",
+      "actors": [
+        "Tom Hardy",
+        "Morgan Freeman"
+      ]
+    },
+    {
+      "title": "Forrest Gump",
+      "release_date": "2023-08-25",
+      "actors": [
+        "Tom Hanks",
+        "Robin Wright"
+      ]
+    },
+    {
+      "title": "The Matrix",
+      "release_date": "2023-09-12",
+      "actors": [
+        "Keanu Reeves",
+        "Carrie-Anne Moss"
+      ]
+    },
+    {
+      "title": "Die Hard",
+      "release_date": "2023-09-12",
+      "actors": [
+        "Linda Hamilton",
+        "Alan Rickman"
+      ]
+    },
+    {
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "release_date": "2023-10-20",
+      "actors": [
+        "Linda Hamilton",
+        "Emma Watson"
+      ]
+    },
+    {
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "release_date": "2023-10-20",
+      "actors": [
+        "Elijah Wood",
+        "Ian McKellen"
+      ]
+    },
+    {
+      "title": "The Terminator",
+      "release_date": "2023-11-15",
+      "actors": [
+        "Arnold Schwarzenegger",
+        "Linda Hamilton"
+      ]
+    },
+    {
+      "title": "Aliens",
+      "release_date": "2023-11-15",
+      "actors": [
+        "Gal Gadot",
+        "Michael Biehn"
+      ]
+    },
+    {
+      "title": "Gladiator",
+      "release_date": "2023-12-10",
+      "actors": [
+        "Tom Hardy",
+        "Joaquin Phoenix"
+      ]
+    },
+    {
+      "title": "Braveheart",
+      "release_date": "2023-12-10",
+      "actors": [
+        "Mel Gibson",
+        "Zoe Saldana"
+      ]
+    },
+    {
+      "title": "Jurassic Park",
+      "release_date": "2024-01-15",
+      "actors": [
+        "Sam Neill",
+        "Laura Dern"
+      ]
+    },
+    {
+      "title": "Jaws",
+      "release_date": "2024-01-15",
+      "actors": [
+        "Roy Scheider",
+        "Robert Shaw"
+      ]
+    },
+    {
+      "title": "The Godfather",
+      "release_date": "2024-02-20",
+      "actors": [
+        "Marlon Brando",
+        "Al Pacino"
+      ]
+    },
+    {
+      "title": "Pulp Fiction",
+      "release_date": "2024-02-20",
+      "actors": [
+        "John Travolta",
+        "Samuel L. Jackson"
+      ]
+    },
+    {
+      "title": "Casablanca",
+      "release_date": "2024-03-10",
+      "actors": [
+        "Humphrey Bogart",
+        "Ingrid Bergman"
+      ]
+    },
+    {
+      "title": "Gone with the Wind",
+      "release_date": "2024-03-10",
+      "actors": [
+        "Clark Gable",
+        "Vivien Leigh"
+      ]
+    },
+    {
+      "title": "Forrest Gump",
+      "release_date": "2024-04-05",
+      "actors": [
+        "Tom Hanks",
+        "Sally Field"
+      ]
+    },
+    {
+      "title": "Titanic",
+      "release_date": "2024-04-05",
+      "actors": [
+        "Leonardo DiCaprio",
+        "Kate Winslet"
+      ]
+    },
+    {
+      "title": "The Dark Knight",
+      "release_date": "2024-05-20",
+      "actors": [
+        "Zoe Saldana",
+        "Heath Ledger"
+      ]
+    },
+    {
+      "title": "The Social Network",
+      "release_date": "2024-05-20",
+      "actors": [
+        "Jesse Eisenberg",
+        "Andrew Garfield"
+      ]
+    },
+    {
+      "title": "Avatar",
+      "release_date": "2024-06-15",
+      "actors": [
+        "Gal Gadot",
+        "Tom Hardy"
+      ]
+    },
+    {
+      "title": "Guardians of the Galaxy",
+      "release_date": "2024-06-15",
+      "actors": [
+        "Chris Pratt",
+        "Zoe Saldana"
+      ]
+    }
+  ]
+}
